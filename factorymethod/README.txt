@@ -22,3 +22,6 @@ Cómo ejecutar el proyecto Factory Method en Java
    java refactoring_guru.factory_method.example.Demo
 
 Ejemplo tomado de: https://refactoring.guru/es/design-patterns/factory-method/java/example
+
+
+El código del Factory Method funciona separando la creación de objetos del lugar donde se usan. En `Demo`, el programa primero decide qué tipo de sistema está usando (Windows o no) y asigna un `Dialog` concreto (`WindowsDialog` o `HtmlDialog`). Luego llama a `renderWindow()`, que pertenece a la clase base `Dialog`, y desde ahí se pide la creación de un botón sin saber exactamente qué tipo será.
